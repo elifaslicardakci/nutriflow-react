@@ -184,6 +184,10 @@ function ClientModal({ c, onClose }) {
 }
 
 export default function Danisanlar() {
+  const handleAddClient = () => {
+  console.log("butona basıldı");
+  alert("Danışan eklendi");
+};
   const toast = useToast();
   const [search, setSearch] = useState('');
   const [filterStatus, setFilterStatus] = useState('');
@@ -305,7 +309,7 @@ export default function Danisanlar() {
             </div>
             <div style={{display:'flex',justifyContent:'flex-end',gap:10,marginTop:24,paddingTop:20,borderTop:'1px solid var(--border-light)'}}>
               <button onClick={()=>setShowAddModal(false)} style={{padding:'9px 20px',borderRadius:99,border:'1px solid var(--border)',background:'white',fontSize:13,fontWeight:500,cursor:'pointer'}}>İptal</button>
-              <button onClick={()=>{toast('Danışan eklendi ✅','success');setShowAddModal(false);}} style={{padding:'9px 20px',borderRadius:99,background:'var(--primary)',color:'white',border:'none',fontSize:13,fontWeight:500,cursor:'pointer'}}>Kaydet</button>
+              <button onClick={()=>{toast('Danışan eklendi ✅','success');setShowAddModal(false);}} onClick={handleAddClient} style={{padding:'9px 20px',borderRadius:99,background:'var(--primary)',color:'white',border:'none',fontSize:13,fontWeight:500,cursor:'pointer'}}>Kaydet</button>
             </div>
           </div>
         </div>

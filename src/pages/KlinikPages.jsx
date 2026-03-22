@@ -178,7 +178,7 @@ export function Olcumler() {
       <div style={{display:'flex',flex:1,overflow:'hidden'}}>
         {/* Client selector */}
         <div style={{width:260,flexShrink:0,background:'var(--surface)',borderRight:'1px solid var(--border-light)',overflowY:'auto',padding:12}}>
-          <div style={{fontSize:11,fontWeight:600,textTransform:'uppercase',letterSpacing:1,color:'var(--muted)',marginBottom:10,padding:'4px 8px'}}>Danışanlar</div>
+          <div style={{fontSize:11,fontWeight:600,textTransform:'uppercase',letterSpacing:1,color:'var(--muted)',marginBottom:10,padding:'4px 8px'}}>Clients</div>
           {clients.map(c=>(
             <div key={c.id} onClick={()=>setSelectedClient(c)}
               style={{display:'flex',alignItems:'center',gap:10,padding:'10px 12px',borderRadius:'var(--radius-md)',cursor:'pointer',marginBottom:4,background:selectedClient?.id===c.id?'var(--sage-50)':'transparent',border:`1px solid ${selectedClient?.id===c.id?'var(--sage-200)':'transparent'}`,transition:'all 0.15s'}}
