@@ -16,7 +16,7 @@ export default function Topbar({ title, subtitle, actions }) {
       </div>
       <div style={{ display:'flex', alignItems:'center', gap:10 }}>
         {actions}
-        <div onClick={() => toast('3 yeni bildirim', 'info')} style={{
+        <div onClick={() => toast('3 new notifications', 'info')} style={{
           width:38, height:38, borderRadius:'var(--radius-md)', background:'var(--sage-50)',
           border:'1px solid var(--border-light)', display:'flex', alignItems:'center',
           justifyContent:'center', fontSize:16, cursor:'pointer', position:'relative',

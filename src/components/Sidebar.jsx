@@ -6,7 +6,7 @@ const navItems = [
   { to: '/dashboard',    icon: '📊', label: 'Dashboard' },
   { to: '/danisanlar',   icon: '👥', label: 'Client',           badge: '48' },
   { to: '/randevular',   icon: '📅', label: 'Appointments',           badge: '3' },
-  { section: 'Clinc' },
+  { section: 'Clinic' },
   { to: '/programlar',   icon: '🥗', label: 'Nutrition Programs' },
   { to: '/olcumler',     icon: '📏', label: 'Measurements' },
   { to: '/tarifler',     icon: '📚', label: 'Recipe Library' },
@@ -14,7 +14,7 @@ const navItems = [
   { to: '/gelir-gider',  icon: '💰', label: 'Income & Expenses' },
   { to: '/raporlar',     icon: '📄', label: 'Reports' },
   { to: '/web-sitem',    icon: '🌐', label: 'Website' },
-  { section: 'Sistem' },
+  { section: 'System' },
   { to: '/ayarlar',      icon: '⚙️', label: 'Settings' },
 ];
 
